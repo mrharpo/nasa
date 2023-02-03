@@ -10,7 +10,7 @@ IMAGE_DIR = '/Users/ryan_harbert/Documents/Screen Savers'
 
 
 def date_range(start_date: dateType, end_date: dateType):
-    for ordinal in range(start_date.toordinal(), end_date.toordinal()):
+    for ordinal in range(start_date.toordinal(), end_date.toordinal() + 1):
         yield dateType.fromordinal(ordinal)
 
 
